@@ -1,0 +1,636 @@
+EESchema Schematic File Version 4
+LIBS:WW-Board-Master V2-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2019-02-24"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J21
+U 1 1 5C72D177
+P 10415 2595
+F 0 "J21" H 10355 2680 50  0000 L CNN
+F 1 "VCC 5V - Sensoren" H 10475 2595 50  0000 L CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_804-102_1x02_P5.00mm_45Degree" H 10415 2595 50  0001 C CNN
+F 3 "~" H 10415 2595 50  0001 C CNN
+	1    10415 2595
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J30
+U 1 1 5C72E156
+P 2995 2305
+F 0 "J30" H 2995 2125 50  0000 C CNN
+F 1 "Eingang 12V - Sensoren" H 3480 2305 50  0000 C CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_804-102_1x02_P5.00mm_45Degree" H 2995 2305 50  0001 C CNN
+F 3 "~" H 2995 2305 50  0001 C CNN
+	1    2995 2305
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J31
+U 1 1 5C72E1B6
+P 2995 2605
+F 0 "J31" H 2995 2425 50  0000 C CNN
+F 1 "Eingang 5V - CCU / Sensoren" H 3645 2605 50  0000 C CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_804-102_1x02_P5.00mm_45Degree" H 2995 2605 50  0001 C CNN
+F 3 "~" H 2995 2605 50  0001 C CNN
+	1    2995 2605
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	865  -3975 4290 -3975
+$Comp
+L Connector_Generic:Conn_01x02 J20
+U 1 1 5C777CE4
+P 10415 2895
+F 0 "J20" H 10350 2980 50  0000 L CNN
+F 1 "VCC 5V - Raspberrymatic CCU" H 10470 2895 50  0000 L CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_804-102_1x02_P5.00mm_45Degree" H 10415 2895 50  0001 C CNN
+F 3 "~" H 10415 2895 50  0001 C CNN
+	1    10415 2895
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J22
+U 1 1 5C7A2E84
+P 10415 2305
+F 0 "J22" H 10350 2390 50  0000 L CNN
+F 1 "VCC 12V  - Sensoren" H 10470 2305 50  0000 L CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_804-102_1x02_P5.00mm_45Degree" H 10415 2305 50  0001 C CNN
+F 3 "~" H 10415 2305 50  0001 C CNN
+	1    10415 2305
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5DF2DA0A
+P 10415 3185
+F 0 "J10" H 10350 3270 50  0000 L CNN
+F 1 "VCC 5V - Raspi ioBroker" H 10470 3185 50  0000 L CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_804-102_1x02_P5.00mm_45Degree" H 10415 3185 50  0001 C CNN
+F 3 "~" H 10415 3185 50  0001 C CNN
+	1    10415 3185
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J32
+U 1 1 5DF3797E
+P 2995 2900
+F 0 "J32" H 2995 2720 50  0000 C CNN
+F 1 "Eingang 5V - ioBroker" H 3495 2900 50  0000 C CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_804-102_1x02_P5.00mm_45Degree" H 2995 2900 50  0001 C CNN
+F 3 "~" H 2995 2900 50  0001 C CNN
+	1    2995 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3195 2205 3395 2205
+Wire Wire Line
+	3195 2800 3395 2800
+Wire Wire Line
+	3395 2205 3395 2505
+$Comp
+L power:GND #PWR01
+U 1 1 5DF14C2D
+P 3395 3035
+F 0 "#PWR01" H 3395 2785 50  0001 C CNN
+F 1 "GND" H 3400 2862 50  0000 C CNN
+F 2 "" H 3395 3035 50  0001 C CNN
+F 3 "" H 3395 3035 50  0001 C CNN
+	1    3395 3035
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3195 2505 3395 2505
+Connection ~ 3395 2505
+Connection ~ 3395 2800
+Wire Wire Line
+	3395 2505 3395 2800
+Wire Wire Line
+	3395 2800 3395 3035
+Wire Wire Line
+	10015 2405 10215 2405
+Wire Wire Line
+	10015 2405 10015 2695
+Wire Wire Line
+	10215 2995 10015 2995
+Connection ~ 10015 2995
+Wire Wire Line
+	10015 2995 10015 3285
+$Comp
+L power:GND #PWR03
+U 1 1 5DF1E269
+P 10015 3395
+F 0 "#PWR03" H 10015 3145 50  0001 C CNN
+F 1 "GND" H 10020 3222 50  0000 C CNN
+F 2 "" H 10015 3395 50  0001 C CNN
+F 3 "" H 10015 3395 50  0001 C CNN
+	1    10015 3395
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10215 2695 10015 2695
+Connection ~ 10015 2695
+Wire Wire Line
+	10015 2695 10015 2995
+Wire Wire Line
+	10215 3285 10015 3285
+Connection ~ 10015 3285
+Wire Wire Line
+	10015 3285 10015 3395
+$Comp
+L Device:CP C7
+U 1 1 5DF2CF1C
+P 6760 3705
+F 0 "C7" H 6760 3780 50  0000 L CNN
+F 1 "1F 5.5V" H 6460 3630 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D20.0mm_P5.00mm" H 6798 3555 50  0001 C CNN
+F 3 "~" H 6760 3705 50  0001 C CNN
+	1    6760 3705
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C8
+U 1 1 5DF2CF2C
+P 7005 3705
+F 0 "C8" H 7020 3785 50  0000 L CNN
+F 1 "1F 5.5V" H 7005 3630 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D20.0mm_P5.00mm" H 7043 3555 50  0001 C CNN
+F 3 "~" H 7005 3705 50  0001 C CNN
+	1    7005 3705
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C9
+U 1 1 5DF2D375
+P 7445 4945
+F 0 "C9" H 7445 5020 50  0000 L CNN
+F 1 "1F 5.5V" H 7145 4870 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D20.0mm_P5.00mm" H 7483 4795 50  0001 C CNN
+F 3 "~" H 7445 4945 50  0001 C CNN
+	1    7445 4945
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C10
+U 1 1 5DF2D385
+P 7690 4945
+F 0 "C10" H 7705 5025 50  0000 L CNN
+F 1 "1F 5.5V" H 7690 4870 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D20.0mm_P5.00mm" H 7728 4795 50  0001 C CNN
+F 3 "~" H 7690 4945 50  0001 C CNN
+	1    7690 4945
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C11
+U 1 1 5DF2D963
+P 8105 6190
+F 0 "C11" H 8105 6265 50  0000 L CNN
+F 1 "1F 5.5V" H 7805 6115 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D20.0mm_P5.00mm" H 8143 6040 50  0001 C CNN
+F 3 "~" H 8105 6190 50  0001 C CNN
+	1    8105 6190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C12
+U 1 1 5DF2D973
+P 8360 6190
+F 0 "C12" H 8375 6270 50  0000 L CNN
+F 1 "1F 5.5V" H 8360 6115 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D20.0mm_P5.00mm" H 8398 6040 50  0001 C CNN
+F 3 "~" H 8360 6190 50  0001 C CNN
+	1    8360 6190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5820 D3
+U 1 1 5C78B8AF
+P 6270 1035
+F 0 "D3" H 6270 955 50  0000 C CNN
+F 1 "1N5820" H 6085 1125 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6270 860 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 6270 1035 50  0001 C CNN
+	1    6270 1035
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3195 2605 3985 2605
+Wire Wire Line
+	3195 2900 3700 2900
+$Comp
+L power:GND #PWR02
+U 1 1 5DF3A959
+P 8800 6515
+F 0 "#PWR02" H 8800 6265 50  0001 C CNN
+F 1 "GND" H 8805 6342 50  0000 C CNN
+F 2 "" H 8800 6515 50  0001 C CNN
+F 3 "" H 8800 6515 50  0001 C CNN
+	1    8800 6515
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9440 2895 10215 2895
+Wire Wire Line
+	9700 3185 10215 3185
+$Comp
+L Device:CP C1
+U 1 1 5DF44028
+P 6025 1765
+F 0 "C1" H 6025 1845 50  0000 L CNN
+F 1 "1,5F 5.5V" H 5650 1690 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D21.0mm_P5.00mm" H 6063 1615 50  0001 C CNN
+F 3 "~" H 6025 1765 50  0001 C CNN
+	1    6025 1765
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5DF44CB4
+P 6025 2110
+F 0 "C3" H 6025 2190 50  0000 L CNN
+F 1 "1,5F 5.5V" H 5650 2035 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D21.0mm_P5.00mm" H 6063 1960 50  0001 C CNN
+F 3 "~" H 6025 2110 50  0001 C CNN
+	1    6025 2110
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5DF45949
+P 6025 2455
+F 0 "C5" H 6025 2535 50  0000 L CNN
+F 1 "1,5F 5.5V" H 5650 2380 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D21.0mm_P5.00mm" H 6063 2305 50  0001 C CNN
+F 3 "~" H 6025 2455 50  0001 C CNN
+	1    6025 2455
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5DF46677
+P 6305 1765
+F 0 "C2" H 6305 1845 50  0000 L CNN
+F 1 "1,5F 5.5V" H 6305 1690 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D21.0mm_P5.00mm" H 6343 1615 50  0001 C CNN
+F 3 "~" H 6305 1765 50  0001 C CNN
+	1    6305 1765
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5DF47321
+P 6305 2110
+F 0 "C4" H 6305 2190 50  0000 L CNN
+F 1 "1,5F 5.5V" H 6305 2035 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D21.0mm_P5.00mm" H 6343 1960 50  0001 C CNN
+F 3 "~" H 6305 2110 50  0001 C CNN
+	1    6305 2110
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 5DF47FA7
+P 6305 2455
+F 0 "C6" H 6305 2535 50  0000 L CNN
+F 1 "1,5F 5.5V" H 6305 2380 50  0000 L CNN
+F 2 "Homebrew:CP_Radial_D21.0mm_P5.00mm" H 6343 2305 50  0001 C CNN
+F 3 "~" H 6305 2455 50  0001 C CNN
+	1    6305 2455
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 1915 6025 1960
+Wire Wire Line
+	6305 1915 6305 1960
+Wire Wire Line
+	6025 2260 6025 2305
+Wire Wire Line
+	6305 2260 6305 2305
+Wire Wire Line
+	6305 2605 8800 2605
+Wire Wire Line
+	6685 2305 10215 2305
+Connection ~ 8360 6340
+Wire Wire Line
+	8105 6340 8360 6340
+Wire Wire Line
+	3195 2305 5600 2305
+Wire Wire Line
+	9310 2595 10215 2595
+Wire Wire Line
+	6025 1615 6170 1615
+$Comp
+L Diode:1N5820 D2
+U 1 1 5DFB441C
+P 6070 1035
+F 0 "D2" H 6070 955 50  0000 C CNN
+F 1 "1N5820" H 6265 1000 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6070 860 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 6070 1035 50  0001 C CNN
+	1    6070 1035
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DFB5496
+P 6270 1380
+F 0 "R1" H 6320 1500 50  0000 L CNN
+F 1 "27/9W" V 6270 1315 25  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L38.0mm_W9.0mm_P40.64mm" V 6200 1380 50  0001 C CNN
+F 3 "~" H 6270 1380 50  0001 C CNN
+	1    6270 1380
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6270 1185 6270 1230
+Wire Wire Line
+	6070 1185 6070 1530
+Wire Wire Line
+	6070 1530 6170 1530
+Wire Wire Line
+	6070 885  6270 885 
+$Comp
+L Diode:1N5820 D1
+U 1 1 5DFBAFDD
+P 5920 885
+F 0 "D1" H 5920 805 50  0000 C CNN
+F 1 "1N5820" H 6080 980 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5920 710 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 5920 885 50  0001 C CNN
+	1    5920 885 
+	-1   0    0    1   
+$EndComp
+Connection ~ 6070 885 
+Wire Wire Line
+	6170 1530 6170 1615
+Connection ~ 6170 1530
+Wire Wire Line
+	6170 1530 6270 1530
+Connection ~ 6170 1615
+Wire Wire Line
+	6170 1615 6305 1615
+Wire Wire Line
+	5770 885  5600 885 
+Wire Wire Line
+	5600 885  5600 2305
+Connection ~ 6270 885 
+Wire Wire Line
+	6270 885  6685 885 
+Wire Wire Line
+	6685 885  6685 2305
+$Comp
+L Diode:1N5820 D6
+U 1 1 5DFC8B2C
+P 6960 2975
+F 0 "D6" H 6960 2895 50  0000 C CNN
+F 1 "1N5820" H 6770 3060 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6960 2800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 6960 2975 50  0001 C CNN
+	1    6960 2975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N5820 D5
+U 1 1 5DFC8B33
+P 6760 2975
+F 0 "D5" H 6760 2895 50  0000 C CNN
+F 1 "1N5820" H 6965 2935 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6760 2800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 6760 2975 50  0001 C CNN
+	1    6760 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DFC8B3A
+P 6960 3320
+F 0 "R2" H 7000 3425 50  0000 L CNN
+F 1 "8,2/9W" V 6960 3260 25  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L38.0mm_W9.0mm_P40.64mm" V 6890 3320 50  0001 C CNN
+F 3 "~" H 6960 3320 50  0001 C CNN
+	1    6960 3320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6960 3125 6960 3170
+Wire Wire Line
+	6760 3125 6760 3470
+Wire Wire Line
+	6760 3470 6860 3470
+Wire Wire Line
+	6760 2825 6960 2825
+$Comp
+L Diode:1N5820 D4
+U 1 1 5DFC8B45
+P 6610 2825
+F 0 "D4" H 6610 2745 50  0000 C CNN
+F 1 "1N5820" H 6790 2915 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6610 2650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 6610 2825 50  0001 C CNN
+	1    6610 2825
+	-1   0    0    1   
+$EndComp
+Connection ~ 6760 2825
+Wire Wire Line
+	6860 3470 6860 3555
+Connection ~ 6860 3470
+Wire Wire Line
+	6860 3470 6960 3470
+Wire Wire Line
+	3985 2605 3985 2825
+Wire Wire Line
+	6760 3555 6860 3555
+Connection ~ 6860 3555
+Wire Wire Line
+	6860 3555 7005 3555
+$Comp
+L Diode:1N5820 D9
+U 1 1 5DFDDEEC
+P 7645 4215
+F 0 "D9" H 7645 4135 50  0000 C CNN
+F 1 "1N5820" H 7430 4295 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7645 4040 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 7645 4215 50  0001 C CNN
+	1    7645 4215
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N5820 D8
+U 1 1 5DFDDEF3
+P 7445 4215
+F 0 "D8" H 7445 4135 50  0000 C CNN
+F 1 "1N5820" H 7650 4170 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7445 4040 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 7445 4215 50  0001 C CNN
+	1    7445 4215
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DFDDEFA
+P 7645 4560
+F 0 "R3" H 7690 4680 50  0000 L CNN
+F 1 "8,2/9W" V 7640 4480 25  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L38.0mm_W9.0mm_P40.64mm" V 7575 4560 50  0001 C CNN
+F 3 "~" H 7645 4560 50  0001 C CNN
+	1    7645 4560
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7645 4365 7645 4410
+Wire Wire Line
+	7445 4365 7445 4710
+Wire Wire Line
+	7445 4710 7545 4710
+Wire Wire Line
+	7445 4065 7645 4065
+$Comp
+L Diode:1N5820 D7
+U 1 1 5DFDDF05
+P 7295 4065
+F 0 "D7" H 7295 3985 50  0000 C CNN
+F 1 "1N5820" H 7485 4140 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7295 3890 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 7295 4065 50  0001 C CNN
+	1    7295 4065
+	-1   0    0    1   
+$EndComp
+Connection ~ 7445 4065
+Wire Wire Line
+	7545 4710 7545 4795
+Connection ~ 7545 4710
+Wire Wire Line
+	7545 4710 7645 4710
+$Comp
+L Diode:1N5820 D12
+U 1 1 5DFDF839
+P 8335 5460
+F 0 "D12" H 8335 5380 50  0000 C CNN
+F 1 "1N5820" H 8115 5540 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 8335 5285 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 8335 5460 50  0001 C CNN
+	1    8335 5460
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N5820 D11
+U 1 1 5DFDF840
+P 8135 5460
+F 0 "D11" H 8135 5380 50  0000 C CNN
+F 1 "1N5820" H 8360 5415 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 8135 5285 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 8135 5460 50  0001 C CNN
+	1    8135 5460
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DFDF847
+P 8335 5805
+F 0 "R4" H 8380 5920 50  0000 L CNN
+F 1 "8,2/9W" V 8330 5740 25  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L38.0mm_W9.0mm_P40.64mm" V 8265 5805 50  0001 C CNN
+F 3 "~" H 8335 5805 50  0001 C CNN
+	1    8335 5805
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8335 5610 8335 5655
+Wire Wire Line
+	8135 5610 8135 5955
+Wire Wire Line
+	8135 5955 8235 5955
+Wire Wire Line
+	8135 5310 8335 5310
+$Comp
+L Diode:1N5820 D10
+U 1 1 5DFDF852
+P 7985 5310
+F 0 "D10" H 7985 5230 50  0000 C CNN
+F 1 "1N5820" H 8200 5375 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7985 5135 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 7985 5310 50  0001 C CNN
+	1    7985 5310
+	-1   0    0    1   
+$EndComp
+Connection ~ 8135 5310
+Wire Wire Line
+	8235 5955 8235 6040
+Connection ~ 8235 5955
+Wire Wire Line
+	8235 5955 8335 5955
+Wire Wire Line
+	7445 4795 7545 4795
+Connection ~ 7545 4795
+Wire Wire Line
+	7545 4795 7690 4795
+Wire Wire Line
+	8800 2605 8800 3855
+Wire Wire Line
+	8105 6040 8235 6040
+Connection ~ 8235 6040
+Wire Wire Line
+	8235 6040 8360 6040
+Wire Wire Line
+	7005 3855 8800 3855
+Connection ~ 8800 3855
+Wire Wire Line
+	8800 3855 8800 5095
+Wire Wire Line
+	7690 5095 8800 5095
+Connection ~ 8800 5095
+Wire Wire Line
+	8800 5095 8800 6340
+Wire Wire Line
+	8360 6340 8800 6340
+Connection ~ 8800 6340
+Wire Wire Line
+	8800 6340 8800 6515
+Wire Wire Line
+	3985 2825 6460 2825
+Connection ~ 3985 2825
+Wire Wire Line
+	3985 4065 7145 4065
+Wire Wire Line
+	3985 2825 3985 4065
+Wire Wire Line
+	3700 2900 3700 5310
+Wire Wire Line
+	3700 5310 7835 5310
+Connection ~ 6960 2825
+Wire Wire Line
+	9310 2595 9310 2825
+Wire Wire Line
+	6960 2825 9310 2825
+Connection ~ 7645 4065
+Wire Wire Line
+	7645 4065 9440 4065
+Wire Wire Line
+	9440 2895 9440 4065
+Connection ~ 8335 5310
+Wire Wire Line
+	8335 5310 9700 5310
+Wire Wire Line
+	9700 3185 9700 5310
+Connection ~ 7005 3855
+Wire Wire Line
+	6760 3855 7005 3855
+Connection ~ 7690 5095
+Wire Wire Line
+	7445 5095 7690 5095
+Connection ~ 6305 2605
+Wire Wire Line
+	6025 2605 6305 2605
+$EndSCHEMATC

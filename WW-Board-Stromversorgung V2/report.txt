@@ -1,0 +1,9 @@
+Plot-Datei „R:\Wohnwagen-Board\WW-Board-Stromversorgung V2\Gerber\HB-WW-UB V2-F.Cu.gbr“ erstellt.
+Plot-Datei „R:\Wohnwagen-Board\WW-Board-Stromversorgung V2\Gerber\HB-WW-UB V2-B.Cu.gbr“ erstellt.
+Plot-Datei „R:\Wohnwagen-Board\WW-Board-Stromversorgung V2\Gerber\HB-WW-UB V2-F.Paste.gbr“ erstellt.
+Plot-Datei „R:\Wohnwagen-Board\WW-Board-Stromversorgung V2\Gerber\HB-WW-UB V2-B.Paste.gbr“ erstellt.
+Plot-Datei „R:\Wohnwagen-Board\WW-Board-Stromversorgung V2\Gerber\HB-WW-UB V2-F.SilkS.gbr“ erstellt.
+Plot-Datei „R:\Wohnwagen-Board\WW-Board-Stromversorgung V2\Gerber\HB-WW-UB V2-B.SilkS.gbr“ erstellt.
+Plot-Datei „R:\Wohnwagen-Board\WW-Board-Stromversorgung V2\Gerber\HB-WW-UB V2-F.Mask.gbr“ erstellt.
+Plot-Datei „R:\Wohnwagen-Board\WW-Board-Stromversorgung V2\Gerber\HB-WW-UB V2-B.Mask.gbr“ erstellt.
+Plot-Datei „R:\Wohnwagen-Board\WW-Board-Stromversorgung V2\Gerber\HB-WW-UB V2-Edge.Cuts.gbr“ erstellt.

@@ -1,0 +1,163 @@
+
+(rules PCB HB-WW-UB V2
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 867)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 750.0)
+    (clear 200.2)
+    (clear 375.0 (type smd_to_turn_gap))
+    (clear 1000.2 (type default_"Netz 230V"))
+    (clear 750.2 (type default_"Versorgung 12V"))
+    (clear 750.2 (type default_"Versorgung 5V"))
+    (clear 50.0 (type smd_smd))
+    (clear 1000.2 (type smd_"Netz 230V"))
+    (clear 750.2 (type smd_"Versorgung 12V"))
+    (clear 750.2 (type smd_"Versorgung 5V"))
+    (clear 1000.2 (type "kicad_default"_"Netz 230V"))
+    (clear 750.2 (type "kicad_default"_"Versorgung 12V"))
+    (clear 750.2 (type "kicad_default"_"Versorgung 5V"))
+    (clear 1000.2 (type "Netz 230V"_"Netz 230V"))
+    (clear 1000.2 (type "Netz 230V"_"Vccc_in"))
+    (clear 1000.2 (type "Netz 230V"_"Versorgung 12V"))
+    (clear 1000.2 (type "Netz 230V"_"Versorgung 5V"))
+    (clear 750.2 (type "Vccc_in"_"Versorgung 12V"))
+    (clear 750.2 (type "Vccc_in"_"Versorgung 5V"))
+    (clear 750.2 (type "Versorgung 12V"_"Versorgung 12V"))
+    (clear 750.2 (type "Versorgung 12V"_"Versorgung 5V"))
+    (clear 750.2 (type "Versorgung 5V"_"Versorgung 5V"))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Netz 230V" "Via[0-1]_800:400_um" "Netz 230V"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Vccc_in" "Via[0-1]_800:400_um" "Vccc_in"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Versorgung 12V" "Via[0-1]_800:400_um" "Versorgung 12V"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Versorgung 5V" "Via[0-1]_800:400_um" "Versorgung 5V"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    "Netz 230V" "Via[0-1]_800:400_um-Netz 230V"
+  )
+  (via_rule
+    "Vccc_in" "Via[0-1]_800:400_um-Vccc_in"
+  )
+  (via_rule
+    "Versorgung 12V" "Via[0-1]_800:400_um-Versorgung 12V"
+  )
+  (via_rule
+    "Versorgung 5V" "Via[0-1]_800:400_um-Versorgung 5V"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 750.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(D1-Pad2)" "Net-(D2-Pad2)" GNDPWR "Net-(D3-Pad2)" GND "Net-(U10-Pad6)" "Net-(U10-Pad5)" "Net-(U20-Pad5)"
+    "Net-(U20-Pad6)" "Net-(U30-Pad5)" "Net-(U30-Pad6)" "Net-(U10-Pad9)" "Net-(U20-Pad9)" "Net-(U30-Pad9)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 750.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "Netz 230V"
+    "Net-(F1-Pad1)" "Net-(F1-Pad2)" "Net-(J1-Pad2)"
+    (clearance_class "Netz 230V")
+    (via_rule Netz 230V)
+    (rule
+      (width 3000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "Vccc_in"
+    (clearance_class "Vccc_in")
+    (via_rule Vccc_in)
+    (rule
+      (width 1500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "Versorgung 12V"
+    "Net-(D11-Pad1)" "Net-(D12-Pad1)" "Net-(D12-Pad2)" "/Board_12V+" "/IRM60_12V+" "/OUT_Sens_12V+"
+    (clearance_class "Versorgung 12V")
+    (via_rule Versorgung 12V)
+    (rule
+      (width 2500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "Versorgung 5V"
+    "Net-(D21-Pad1)" "Net-(D22-Pad1)" "Net-(D22-Pad2)" "Net-(D31-Pad1)" "Net-(D32-Pad2)" "Net-(D32-Pad1)" "/Out_CCU_+" "/Out_ioBroker_+"
+    "/IRM60_05V+"
+    (clearance_class "Versorgung 5V")
+    (via_rule Versorgung 5V)
+    (rule
+      (width 2500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
